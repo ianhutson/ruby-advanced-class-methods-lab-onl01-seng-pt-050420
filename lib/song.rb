@@ -36,9 +36,9 @@ class Song
     if @@all.include? self.name
       @@all.find{|song| song.name == name}
     else 
-       song = self.create
-    song.name = name
-    song
+      song = self.create
+      song.name = name
+      song
     end
   end
 end
