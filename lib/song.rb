@@ -38,4 +38,5 @@ class Song
     else 
       @@all.find{|song| song.name == name}
     end
+  end
 end
