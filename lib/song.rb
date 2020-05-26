@@ -33,10 +33,5 @@ class Song
   end
   
   def self.find_or_create_by_name(name)
-    if @@all.include? self.name
-      self.find_by_name(name)
-    else 
-     self.create_by_name(name)
-    end
-  end
+   self.find_by_name(song_name) || self.create_by_name(song_name)
 end
