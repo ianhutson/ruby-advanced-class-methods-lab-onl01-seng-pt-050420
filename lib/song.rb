@@ -33,4 +33,9 @@ class Song
   end
   
   def self.find_or_create_by_name(name)
+    if @@all.include? self.name
+      self.name
+    else 
+      @@all.find{|song| song.name == name}
+    end
 end
