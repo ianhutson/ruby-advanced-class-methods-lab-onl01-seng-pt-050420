@@ -42,7 +42,7 @@ class Song
     end
   end
   
-  def self.create_from_filename(fn)
+  def self.new_from_filename(fn)
     chunk = fn.split(" - ")
     artist_name = chunk[0]
     song_name = chunk
