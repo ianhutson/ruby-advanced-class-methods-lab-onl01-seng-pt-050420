@@ -15,4 +15,10 @@ class Song
     @@all << song
     song
   end
+  
+    def self.create(name)
+    person = self.new
+    person.name = name
+    @@all << person
+  end
 end
