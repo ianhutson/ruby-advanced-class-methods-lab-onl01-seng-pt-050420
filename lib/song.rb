@@ -46,6 +46,11 @@ class Song
     chunk = fn.split(" - ")
     artist_name = chunk[0]
     song_name = chunk
+    
+    song = self.new
+    song.name = song_name
+    song.artist_name = artist_name
+    song
   end
   
   def self.destroy_all
