@@ -41,4 +41,8 @@ class Song
       song.name
     end
   end
+  
+  def self.destroy_all
+    @@all.destroy
+  end
 end
