@@ -44,6 +44,7 @@ class Song
   
   def self.create_from_filename(fn)
     chunk = fn.split(" - ")
+    artist
   end
   
   def self.destroy_all
